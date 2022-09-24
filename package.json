@@ -1,0 +1,52 @@
+{
+  "name": "google-subscription-manager",
+  "version": "1.0.0",
+  "description": "Node.js library for managing Google real-time subscription notifications",
+  "main": "/lib/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build",
+    "clean": "rm -rf dist",
+    "lint": "eslint . --ext .ts --fix --max-warnings 0",
+    "test": "mocha -r ts-node/register -r tsconfig-paths/register tests/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VGavara/google-subscription-manager.git"
+  },
+  "keywords": [
+    "google",
+    "real-time",
+    "subscriptions",
+    "notifications"
+  ],
+  "author": "Vicente Gavara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VGavara/google-subscription-manager/issues"
+  },
+  "homepage": "https://github.com/VGavara/google-subscription-manager#readme",
+  "devDependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "@types/sinon": "^10.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "chai": "^4.3.6",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "mocha": "^10.0.0",
+    "prettier": "^2.7.1",
+    "sinon": "^14.0.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.8.3"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write --ignore-unknown",
+      "npm run lint"
+    ]
+  }
+}

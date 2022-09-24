@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "declaration": true,
+        "outDir": "./lib",
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "paths": {
+            "@typings/*": [
+                "src/typings/*"
+            ],
+            "@typings": [
+                "src/typings"
+            ],
+            "@src/*": [
+                "src/*"
+            ]
+        }
+    },
+    "include": [
+        "src",
+        "tests"
+    ]
+}
